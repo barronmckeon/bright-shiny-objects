@@ -3,12 +3,52 @@
 // └─────────────────┘
 
 
+function createUser (firstName, lastName) {
+    let fullName= {
+        firstName: firstName,
+        lastName : lastName
+    }
+return fullName;
+}
+
+function setAge (user, age) {
+    user.age = age
+return user
+}
 
 
 
+function incrementAge ( user, increaseage ){
+    increaseage = user.age++
+return  user
+}
+
+
+function fixCar (car) {
+    car.needsMaintenance = false;
+return car;
+}
+
+function addGrades (  student, newGrades){
+    for (let i=0 ; i <  newGrades.length; i++  )
+    student.grades.push(newGrades[i])
+
+return student;
+}
+
+function getDataType (  object, key ){
+    return typeof object[key]
+}
+
+
+function addToDo (toDo, newToDo)  {
+    toDo.push(newToDo);
+    return toDo
+}
 
 
 
+Newsong 
 
 
 // ┌─────────────────────────────────────────────────────────────────────────┐
